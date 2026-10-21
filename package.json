@@ -1,0 +1,46 @@
+{
+  "name": "merchant-integration-copilot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "concurrently -k \"tsx watch server/index.ts\" \"vite --host 127.0.0.1\"",
+    "build": "tsc --noEmit && vite build",
+    "start": "tsx server/index.ts",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "runner:build": "docker build -t ralio-runner:1 -f runner/Dockerfile .",
+    "test:runner": "node --import tsx --test tests/docker.acceptance.ts"
+  },
+  "dependencies": {
+    "@openai/agents": "0.3.0",
+    "@supabase/supabase-js": "2.57.4",
+    "diff": "8.0.4",
+    "dotenv": "16.6.1",
+    "express": "5.1.0",
+    "lucide-react": "0.468.0",
+    "multer": "2.4.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "stripe": "18.5.0",
+    "yauzl": "3.4.0",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/diff": "7.0.2",
+    "@types/express": "5.0.3",
+    "@types/multer": "2.0.0",
+    "@types/node": "22.18.6",
+    "@types/react": "19.1.13",
+    "@types/react-dom": "19.1.9",
+    "@types/yauzl": "2.10.3",
+    "@vitejs/plugin-react": "4.7.0",
+    "concurrently": "9.2.5",
+    "prettier": "3.6.2",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2",
+    "vite": "6.4.4"
+  }
+}

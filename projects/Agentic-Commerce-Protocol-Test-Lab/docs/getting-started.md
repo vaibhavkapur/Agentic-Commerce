@@ -9,8 +9,8 @@ Use Python 3.9+ (the project requires it; the container uses Python 3.12), pip, 
 ## Clone and install
 
 ```bash
-git clone https://github.com/vaibhavkapur/Agentic-Commerce-Protocol-Test-Lab.git
-cd Agentic-Commerce-Protocol-Test-Lab
+git clone https://github.com/vaibhavkapur/Agentic-Commerce.git
+cd Agentic-Commerce/projects/Agentic-Commerce-Protocol-Test-Lab
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.lock

@@ -9,8 +9,8 @@ Use Python 3.12 (the container runtime), `pip`, and Git. The optional Next.js 14
 ## Clone and install
 
 ```bash
-git clone https://github.com/vaibhavkapur/Agent-Authorization-Wallet-Merchant-Trust-Gateway.git
-cd Agent-Authorization-Wallet-Merchant-Trust-Gateway
+git clone https://github.com/vaibhavkapur/Agentic-Commerce.git
+cd Agentic-Commerce/projects/Agent-Authorization-Wallet-Merchant-Trust-Gateway
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

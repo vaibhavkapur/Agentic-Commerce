@@ -1,0 +1,50 @@
+{
+  "import_commit": "f8155c987151d969ff4d63be61b6a986d6f000e1",
+  "repositories": [
+    {
+      "name": "Agent-Authorization-Wallet-Merchant-Trust-Gateway",
+      "path": "projects/Agent-Authorization-Wallet-Merchant-Trust-Gateway",
+      "url": "https://github.com/vaibhavkapur/Agent-Authorization-Wallet-Merchant-Trust-Gateway",
+      "default_branch": "main",
+      "commit": "f129ae31578943a53f962c15da2f97d6cf133f97",
+      "tree": "47e1055bf2ed322a5dabc72aa43b23cf4001c411",
+      "file_count": 153
+    },
+    {
+      "name": "Agent-Services-Marketplace",
+      "path": "projects/Agent-Services-Marketplace",
+      "url": "https://github.com/vaibhavkapur/Agent-Services-Marketplace",
+      "default_branch": "main",
+      "commit": "c99eabd11a56f4de8fbc0ea319698488cfa606d3",
+      "tree": "9174575c0993d3f1cb9095484bc867f9a85c92e2",
+      "file_count": 104
+    },
+    {
+      "name": "Agentic-Commerce-Protocol-Test-Lab",
+      "path": "projects/Agentic-Commerce-Protocol-Test-Lab",
+      "url": "https://github.com/vaibhavkapur/Agentic-Commerce-Protocol-Test-Lab",
+      "default_branch": "main",
+      "commit": "ea514b28d2053933cbff9520efcc4494e15dd6d1",
+      "tree": "2f2caf0ff7df5f1b3ff3100115a799aea636b0b5",
+      "file_count": 309
+    },
+    {
+      "name": "Autonomous-Price-Watch-Buyer",
+      "path": "projects/Autonomous-Price-Watch-Buyer",
+      "url": "https://github.com/vaibhavkapur/Autonomous-Price-Watch-Buyer",
+      "default_branch": "main",
+      "commit": "5ed4fb79e571ac5a443b8b79202f0e3b0cdf04ec",
+      "tree": "fffb2d2d6449ac783d82797202ed3f6efb1207f2",
+      "file_count": 110
+    },
+    {
+      "name": "Cross-Merchant-Procurement-Agent",
+      "path": "projects/Cross-Merchant-Procurement-Agent",
+      "url": "https://github.com/vaibhavkapur/Cross-Merchant-Procurement-Agent",
+      "default_branch": "main",
+      "commit": "df5d72232cb7a31615a7f1a0ca57efc8d5d56d30",
+      "tree": "21d3e0bc94132bb699ab12269a16b0bb31ac72d0",
+      "file_count": 234
+    }
+  ]
+}

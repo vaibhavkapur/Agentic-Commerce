@@ -9,8 +9,8 @@ Node.js **22.18+**, npm, and Git are required. The scripts run TypeScript direct
 ## Clone, install, and start
 
 ```bash
-git clone https://github.com/vaibhavkapur/Cross-Merchant-Procurement-Agent.git
-cd Cross-Merchant-Procurement-Agent
+git clone https://github.com/vaibhavkapur/Agentic-Commerce.git
+cd Agentic-Commerce/projects/Cross-Merchant-Procurement-Agent
 npm ci
 npm run typecheck
 npm test

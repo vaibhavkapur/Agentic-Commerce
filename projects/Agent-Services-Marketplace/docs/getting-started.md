@@ -9,8 +9,8 @@ Use Node.js 22 (the container runtime), pnpm 10.15.0 (the repository's `packageM
 ## Clone and run
 
 ```bash
-git clone https://github.com/vaibhavkapur/Agent-Services-Marketplace.git
-cd Agent-Services-Marketplace
+git clone https://github.com/vaibhavkapur/Agentic-Commerce.git
+cd Agentic-Commerce/projects/Agent-Services-Marketplace
 pnpm install --frozen-lockfile
 pnpm dev
 ```

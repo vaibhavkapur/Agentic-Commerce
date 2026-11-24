@@ -7,8 +7,8 @@
 Use Python 3.9+ and Make. The optional web UI needs Node.js 20+ and npm. The container runtime is Python 3.12.
 
 ```bash
-git clone https://github.com/vaibhavkapur/Autonomous-Price-Watch-Buyer.git
-cd Autonomous-Price-Watch-Buyer
+git clone https://github.com/vaibhavkapur/Agentic-Commerce.git
+cd Agentic-Commerce/projects/Autonomous-Price-Watch-Buyer
 make venv
 make test
 make dev

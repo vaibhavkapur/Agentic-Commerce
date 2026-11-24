@@ -2,7 +2,7 @@
 
 Rails app for importing, exploring, and adjudicating security-deposit claims. Source data is a spreadsheet of ~1,244 claims plus a folder of supporting claim documents (ledgers, move-out statements, invoices, SDI forms).
 
-https://github.com/user-attachments/assets/3ce97ff5-8209-4e6f-9533-12932c10ab77
+[Download the demo video (QuickTime, 78 MiB)](https://github.com/vaibhavkapur/Agentic-Commerce/releases/download/security-deposit-claims-demo/security-deposit-claims-demo.mov)
 
 ## How it works
 
@@ -19,6 +19,8 @@ Claims and their documents, line items, activity, and decisions are browsable at
 Requires Ruby 3.2.2 and PostgreSQL.
 
 ```sh
+git clone https://github.com/vaibhavkapur/Agentic-Commerce.git
+cd Agentic-Commerce/projects/Security-Deposit-Claims
 bundle install
 bin/rails db:setup
 bin/rails server

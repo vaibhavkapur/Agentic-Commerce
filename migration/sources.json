@@ -75,6 +75,18 @@
       "tree": "7dd4026e0256064b215438f0f1ad9f4fc82af3ac",
       "file_count": 86,
       "import_commit": "a90e12195b7f238a3a652a511999277f30418865"
+    },
+    {
+      "name": "Security-Deposit-Claims",
+      "path": "projects/Security-Deposit-Claims",
+      "url": "https://github.com/vaibhavkapur/Security-Deposit-Claims",
+      "default_branch": "main",
+      "commit": "064b479281653a056db370b9728e7f9c73e36121",
+      "original_commit": "c4e519464d4936f028ce0f9ca385743b421b8204",
+      "tree": "4624e1c414a506aeaaa6e615d9b07d351febafd3",
+      "file_count": 137,
+      "import_commit": "0f035f0856bd6ac5544243932de22049be9cc462",
+      "history_note": "Rewrote all 27 commits to omit .claude/settings.local.json, which contained an exposed credential. The final project tree matches the source."
     }
   ]
 }

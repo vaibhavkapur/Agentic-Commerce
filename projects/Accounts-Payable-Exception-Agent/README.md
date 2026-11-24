@@ -10,8 +10,8 @@ Built with Python, FastAPI, LangGraph, React, and TypeScript. The local MVP uses
 
 ```bash
 # Requires Python 3.12+, uv, Node.js 20.19+ (or 22.12+), and npm
-git clone https://github.com/vaibhavkapur/Accounts-Payable-Exception-Agent.git
-cd Accounts-Payable-Exception-Agent
+git clone https://github.com/vaibhavkapur/Agentic-Commerce.git
+cd Agentic-Commerce/projects/Accounts-Payable-Exception-Agent
 cd backend
 uv venv --python 3.12 .venv
 uv pip install --python .venv/bin/python -e ".[dev]"
@@ -19,7 +19,7 @@ uv pip install --python .venv/bin/python -e ".[dev]"
 .venv/bin/uvicorn app.main:app --reload --port 8000
 ```
 
-In a second terminal, from the repository root:
+In a second terminal, from the project directory:
 
 ```bash
 cd frontend

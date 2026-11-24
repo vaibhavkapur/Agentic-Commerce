@@ -4,7 +4,7 @@
 
 ## Application Checks
 
-From the repository root, after `npm ci`:
+From the project directory, after `npm ci`:
 
 ```bash
 npm test

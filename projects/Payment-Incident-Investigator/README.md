@@ -10,14 +10,14 @@ Built with FastAPI, Google ADK, React, TypeScript, and PostgreSQL, plus an Expre
 
 ```bash
 # Requires Docker, Python 3.12+, Node.js 20.19+ (or 22.12+), npm, and Make
-git clone https://github.com/vaibhavkapur/Payment-Incident-Investigator.git
-cd Payment-Incident-Investigator
+git clone https://github.com/vaibhavkapur/Agentic-Commerce.git
+cd Agentic-Commerce/projects/Payment-Incident-Investigator
 cp .env.example .env
 make setup
 make up
 ```
 
-From the repository root, run each service in its own terminal:
+From the project directory, run each service in its own terminal:
 
 ```bash
 make merchant   # http://localhost:4100

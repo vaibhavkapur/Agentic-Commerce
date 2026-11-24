@@ -5,8 +5,8 @@
 ## Clone
 
 ```bash
-git clone https://github.com/vaibhavkapur/Payment-Incident-Investigator.git
-cd Payment-Incident-Investigator
+git clone https://github.com/vaibhavkapur/Agentic-Commerce.git
+cd Agentic-Commerce/projects/Payment-Incident-Investigator
 ```
 
 ## Local Setup

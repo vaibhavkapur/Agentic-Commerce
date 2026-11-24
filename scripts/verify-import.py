@@ -14,10 +14,10 @@ def git(*args):
 
 def main():
     manifest = json.loads((ROOT / "migration/sources.json").read_text())
-    imported = manifest["import_commit"]
-    git("merge-base", "--is-ancestor", imported, "HEAD")
     total = 0
     for project in manifest["repositories"]:
+        imported = project.get("import_commit", manifest["import_commit"])
+        git("merge-base", "--is-ancestor", imported, "HEAD")
         source = project["commit"]
         path = project["path"]
         git("merge-base", "--is-ancestor", source, imported)
@@ -29,7 +29,7 @@ def main():
         if entries != project["file_count"]:
             raise SystemExit(f"Tracked entry count differs for {path}")
         total += entries
-    print(f"Verified {len(manifest['repositories'])} project trees and {total} tracked entries at {imported[:12]}.")
+    print(f"Verified {len(manifest['repositories'])} project trees and {total} tracked entries at their recorded imports.")
 
 
 if __name__ == "__main__":

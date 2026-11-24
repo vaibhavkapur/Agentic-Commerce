@@ -45,7 +45,7 @@ React / TypeScript / Express with local JSON persistence, optional OpenAI Agents
 
 ## Related Projects
 
-These are independent companion repositories, not runtime dependencies or claims of implemented integrations.
+These companion projects run independently.
 
-- [Accounts Payable Exception Agent](https://github.com/vaibhavkapur/Accounts-Payable-Exception-Agent)
-- [Payment Incident Investigator](https://github.com/vaibhavkapur/Payment-Incident-Investigator)
+- [Accounts Payable Exception Agent](../../Accounts-Payable-Exception-Agent/)
+- [Payment Incident Investigator](../../Payment-Incident-Investigator/)

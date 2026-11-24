@@ -37,7 +37,7 @@ Python 3.12+, FastAPI, SQLAlchemy, LangGraph, React, TypeScript, and Vite. SQLit
 
 ## Related Projects
 
-These are independent companion repositories, not runtime dependencies or claims of implemented integrations.
+These companion projects run independently.
 
-- [Merchant Integration Copilot](https://github.com/vaibhavkapur/Merchant-Integration-Copilot)
-- [Payment Incident Investigator](https://github.com/vaibhavkapur/Payment-Incident-Investigator)
+- [Merchant Integration Copilot](../../Merchant-Integration-Copilot/)
+- [Payment Incident Investigator](../../Payment-Incident-Investigator/)

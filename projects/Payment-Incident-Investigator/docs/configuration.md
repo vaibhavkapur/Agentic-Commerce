@@ -2,7 +2,7 @@
 
 [Documentation](index.md) · [Getting Started](getting-started.md) · [Repository README](../README.md)
 
-Copy [.env.example](../.env.example) to `.env` at the repository root. The Makefile exports its values to each service. Keep provider and worker secrets on the server; only public API/auth configuration belongs in `VITE_` variables.
+Copy [.env.example](../.env.example) to `.env` at the project directory. The Makefile exports its values to each service. Keep provider and worker secrets on the server; only public API/auth configuration belongs in `VITE_` variables.
 
 ## Local Defaults
 

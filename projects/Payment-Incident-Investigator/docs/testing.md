@@ -12,7 +12,7 @@ make test-api
 # Or both:
 make test
 
-# Static checks / builds, from the repository root:
+# Static checks / builds, from the project directory:
 (cd merchant && npm run typecheck)
 (cd web && npm run build)
 

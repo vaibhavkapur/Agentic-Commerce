@@ -10,8 +10,8 @@
 ## Clone
 
 ```bash
-git clone https://github.com/vaibhavkapur/Accounts-Payable-Exception-Agent.git
-cd Accounts-Payable-Exception-Agent
+git clone https://github.com/vaibhavkapur/Agentic-Commerce.git
+cd Agentic-Commerce/projects/Accounts-Payable-Exception-Agent
 ```
 
 ## Backend
@@ -31,7 +31,7 @@ The API is at `http://127.0.0.1:8000` (`/health`, interactive docs at `/docs`). 
 
 ## Frontend
 
-Run these commands in a second terminal from the repository root.
+Run these commands in a second terminal from the project directory.
 
 ```bash
 cd frontend

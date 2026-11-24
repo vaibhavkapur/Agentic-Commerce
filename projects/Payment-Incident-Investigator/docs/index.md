@@ -41,7 +41,7 @@ scripts/    demo.sh
 
 ## Related Projects
 
-These are independent companion repositories, not runtime dependencies or claims of implemented integrations.
+These companion projects run independently.
 
-- [Accounts Payable Exception Agent](https://github.com/vaibhavkapur/Accounts-Payable-Exception-Agent)
-- [Merchant Integration Copilot](https://github.com/vaibhavkapur/Merchant-Integration-Copilot)
+- [Accounts Payable Exception Agent](../../Accounts-Payable-Exception-Agent/)
+- [Merchant Integration Copilot](../../Merchant-Integration-Copilot/)

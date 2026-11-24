@@ -45,6 +45,36 @@
       "commit": "df5d72232cb7a31615a7f1a0ca57efc8d5d56d30",
       "tree": "21d3e0bc94132bb699ab12269a16b0bb31ac72d0",
       "file_count": 234
+    },
+    {
+      "name": "Accounts-Payable-Exception-Agent",
+      "path": "projects/Accounts-Payable-Exception-Agent",
+      "url": "https://github.com/vaibhavkapur/Accounts-Payable-Exception-Agent",
+      "default_branch": "main",
+      "commit": "a219777acbf20e9c5677bca70365df81be668e88",
+      "tree": "4b61472a6887511cccae500c0745de4de5f5da47",
+      "file_count": 89,
+      "import_commit": "a90e12195b7f238a3a652a511999277f30418865"
+    },
+    {
+      "name": "Merchant-Integration-Copilot",
+      "path": "projects/Merchant-Integration-Copilot",
+      "url": "https://github.com/vaibhavkapur/Merchant-Integration-Copilot",
+      "default_branch": "main",
+      "commit": "918e5ba223913fa33ecbc8a6ade0f8b24501d713",
+      "tree": "5ca9183af3fb108ca1cfa55ad47f88f6447d1b88",
+      "file_count": 46,
+      "import_commit": "a90e12195b7f238a3a652a511999277f30418865"
+    },
+    {
+      "name": "Payment-Incident-Investigator",
+      "path": "projects/Payment-Incident-Investigator",
+      "url": "https://github.com/vaibhavkapur/Payment-Incident-Investigator",
+      "default_branch": "main",
+      "commit": "328d253a241642d1b9474784806ee8aa8dbb1bdb",
+      "tree": "7dd4026e0256064b215438f0f1ad9f4fc82af3ac",
+      "file_count": 86,
+      "import_commit": "a90e12195b7f238a3a652a511999277f30418865"
     }
   ]
 }

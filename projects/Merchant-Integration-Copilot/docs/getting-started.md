@@ -7,8 +7,8 @@
 Requires Node.js 20.19+ and npm. Docker is needed only for isolated verification.
 
 ```bash
-git clone https://github.com/vaibhavkapur/Merchant-Integration-Copilot.git
-cd Merchant-Integration-Copilot
+git clone https://github.com/vaibhavkapur/Agentic-Commerce.git
+cd Agentic-Commerce/projects/Merchant-Integration-Copilot
 ```
 
 ## Run Locally

@@ -10,8 +10,8 @@ Built with React, TypeScript, Express, and the OpenAI Agents SDK; the interface 
 
 ```bash
 # Requires Node.js 20.19+ and npm
-git clone https://github.com/vaibhavkapur/Merchant-Integration-Copilot.git
-cd Merchant-Integration-Copilot
+git clone https://github.com/vaibhavkapur/Agentic-Commerce.git
+cd Agentic-Commerce/projects/Merchant-Integration-Copilot
 npm ci
 npm run dev
 ```

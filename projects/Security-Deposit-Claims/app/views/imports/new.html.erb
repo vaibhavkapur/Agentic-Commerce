@@ -1,0 +1,93 @@
+<header class="page-header">
+  <h1>Security Deposit Claims</h1>
+  <% if AdjudicationDecision.any? %>
+    <nav class="header-links">
+      <%= link_to "Analytics", analytics_path %>
+    </nav>
+  <% end %>
+  <% if Claim.any? %>
+    <%= button_to "Reset", import_path, method: :delete,
+          class: "clear-button",
+          data: { turbo_confirm: "Reset everything? This deletes all imported records and clears the chosen file." } %>
+  <% end %>
+</header>
+
+<% if flash[:alert] %>
+  <p class="flash-alert"><%= flash[:alert] %></p>
+<% end %>
+<% if flash[:notice] %>
+  <p class="flash-notice"><%= flash[:notice] %></p>
+<% end %>
+
+<div class="upload-grid">
+  <%= form_with url: import_path, method: :post, multipart: true, class: "upload-form" do |f| %>
+    <label class="upload-label">Spreadsheet</label>
+    <%= f.file_field :file, accept: ".xlsx", required: true %>
+    <%= f.submit "Import" %>
+  <% end %>
+
+  <%= form_with url: import_documents_path, method: :post, multipart: true, class: "upload-form" do |f| %>
+    <label class="upload-label">PDFs</label>
+    <%= f.file_field :file, accept: ".zip", required: true %>
+    <%= f.submit "Import" %>
+  <% end %>
+</div>
+
+<section class="page-section">
+  <h2>Database tables</h2>
+  <div class="table-group">
+    <%= render partial: "table", collection: @spreadsheet_tables, as: :table %>
+  </div>
+
+  <div class="group-divider">
+    <%= form_with url: extract_path, method: :post do |f| %>
+      <%= f.submit "Claude extraction", class: "extract-button" %>
+    <% end %>
+  </div>
+
+  <div class="table-group">
+    <%= render partial: "table", collection: @pdf_tables, as: :table %>
+  </div>
+  <div class="table-group">
+    <%= render partial: "table", collection: @adjudication_tables, as: :table %>
+  </div>
+</section>
+
+<section class="page-section">
+  <h2>Adjudication decision</h2>
+
+  <%= form_with url: adjudicate_path, method: :post, class: "adjudication-form" do |f| %>
+    <label class="upload-label" for="tracking_numbers">Tracking numbers (comma or newline separated)</label>
+    <%= f.text_area :tracking_numbers, id: "tracking_numbers", rows: 3,
+          value: @tracking_numbers_input, placeholder: "e.g. 100234, 100251", required: true %>
+    <%= f.submit "Get decisions" %>
+  <% end %>
+
+  <% (@adjudication_results || []).each do |result| %>
+    <section class="adjudication-result">
+      <% if result[:claim].nil? %>
+        <h3>#<%= result[:tracking_number] %></h3>
+        <p class="empty-note">No claim found with this tracking number.</p>
+      <% else %>
+        <% decision = result[:decision] %>
+        <h3>
+          <%= link_to "Claim ##{result[:claim].tracking_number}", claim_path(result[:claim]) %>
+          <% if decision %>
+            <% label = { "approve" => "Allow", "decline" => "Deny" }.fetch(decision.outcome, decision.outcome) %>
+            <span class="decision-badge decision-badge-<%= decision.outcome %>"><%= label %></span>
+          <% end %>
+        </h3>
+        <% if decision.nil? %>
+          <p class="empty-note">No decisions on file for this claim.</p>
+        <% else %>
+          <ul class="decision-detail">
+            <% if decision.amount %>
+              <li>Amount: <%= number_to_currency(decision.amount) %></li>
+            <% end %>
+            <li>Reason: <%= decision.reason %></li>
+          </ul>
+        <% end %>
+      <% end %>
+    </section>
+  <% end %>
+</section>

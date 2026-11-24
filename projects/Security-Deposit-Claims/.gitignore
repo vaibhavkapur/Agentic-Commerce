@@ -1,0 +1,18 @@
+.DS_Store
+
+# Claim source data — not code (large and contains tenant PII)
+/docs/
+/docs.zip
+/Claims.xlsx
+
+# Rails
+/log/
+/tmp/
+/storage/
+/vendor/bundle/
+/config/master.key
+/.bundle/
+/.env
+
+# Local Claude permissions may include credentials from shell commands
+**/.claude/settings.local.json

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+backend/.venv/
+
+# Local runtime data (SQLite database, stored documents, LangGraph checkpoints, demo PDFs)
+backend/data/
+
+# Evaluation outputs: keep the markdown summaries, ignore raw JSON runs
+backend/eval/reports/*.json
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+
+# OS / editor
+.DS_Store
+
+# Generated dependencies, caches, and build metadata
+node_modules/
+.venv/
+*.egg-info/
+.ruff_cache/
+*.tsbuildinfo
+*.log
+
+# Duplicate local report copy
+backend/eval/reports/latest 2.md
